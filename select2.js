@@ -1414,7 +1414,7 @@ the specific language governing permissions and limitations under the Apache Lic
                 mask.attr("id","select2-drop-mask").attr("class","select2-drop-mask");
                 mask.hide();
                 mask.appendTo(this.body);
-                mask.on("mousedown touchstart click", function (e) {
+                mask.on("mousedown click", function (e) {
                     // Prevent IE from generating a click event on the body
                     reinsertElement(mask);
 
@@ -3064,7 +3064,7 @@ the specific language governing permissions and limitations under the Apache Lic
             });
             this.setVal(val);
         },
-        
+
         createChoice: function (data) {
             var enableChoice = !data.locked,
                 enabledItem = $(
